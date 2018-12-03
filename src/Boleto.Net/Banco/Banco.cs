@@ -169,6 +169,10 @@ namespace BoletoNet
                     case 743:
                         _IBanco = new Banco_Semear();
                         break;
+                    // 487 - Deutsche Bank
+                    case 487:
+                        _IBanco = new Banco_Deutsche();
+                        break;
                     case ((int)Enums.Bancos.Maxima):
                         _IBanco = new Banco_Maxima();
                         break;

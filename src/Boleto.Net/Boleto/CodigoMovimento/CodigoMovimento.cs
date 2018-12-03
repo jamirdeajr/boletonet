@@ -102,6 +102,10 @@ namespace BoletoNet
                     case 479:
                         //_ICodigoMovimento = new CodigoMovimento_BankBoston();
                         throw new Exception("Código do banco não implementando: " + codigoBanco);
+                    //487 - Deustch
+                    case 487:
+                        //_ICodigoMovimento = new CodigoMovimento_Deustch();//@@TODO Deutsch
+                        throw new Exception("Código do banco não implementando: " + codigoBanco);
                     // 85 - CECRED
                     case 85:
                         _ICodigoMovimento = new CodigoMovimento_Cecred(codigoMovimento);

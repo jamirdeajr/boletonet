@@ -177,6 +177,10 @@ namespace BoletoNet
                     case 21:
                         _IEspecieDocumento = new EspecieDocumento_Banestes(codigoEspecie);
                         break;
+                    //487 - Deutsch
+                    case 487:
+                        _IEspecieDocumento = new EspecieDocumento_Deutsche(codigoEspecie);
+                        break;
                     default:
                         throw new Exception("Código do banco não implementando: " + codigoBanco);
                 }
@@ -339,6 +343,9 @@ namespace BoletoNet
                     //743 - Semear
                     case 743:
                         return new EspecieDocumento_Semear().getCodigoEspecieBySigla(sigla);
+                    //487 - Deutsch
+                    case 487:
+                        return new EspecieDocumento_Deutsche().getCodigoEspecieBySigla(sigla);
                     default:
                         throw new Exception("Código do banco não implementando: " + codigoBanco);
                 }
@@ -347,7 +354,6 @@ namespace BoletoNet
             {
                 throw new Exception("Erro durante a execução da transação.", ex);
             }
-        
         }
 
         private static Dictionary<int, AbstractEspecieDocumento> especiesDocumentosBancos = new Dictionary<int, AbstractEspecieDocumento>() {
@@ -368,7 +374,8 @@ namespace BoletoNet
                 { 707, new EspecieDocumento_Daycoval   ()  },
                 { 637, new EspecieDocumento_Sofisa     ()  },
                 { 743, new EspecieDocumento_Semear     ()  },
-                { 21, new EspecieDocumento_Banestes    ()  }
+                { 21, new EspecieDocumento_Banestes    ()  },
+                { 487, new EspecieDocumento_Deutsche    ()  }
         };
     }
 }

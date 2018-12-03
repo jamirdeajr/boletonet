@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\Boleto.Net",
-    "\\src\\Boleto.Net\\Banco"
+    "\\src\\Boleto.Net\\Boleto\\CodigoMovimento",
+    "\\src\\Boleto.Net\\Boleto\\Instrucao",
+    "\\src\\Boleto.Net\\Enums",
+    "\\src\\Boleto.Net\\Imagens"
   ],
   "PreviewInSolutionExplorer": false
 }
